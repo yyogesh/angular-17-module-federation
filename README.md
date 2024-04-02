@@ -36,3 +36,5 @@ ng add @angular-architects/module-federation --project host-app --port 4200 host
  ng add @angular-architects/module-federation --project mfe-app --port 4300 --type remote
 
  ng g m todo-list --project mfe-app
+
+ ng g module left-navigation --project mfe-app
