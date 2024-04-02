@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+ng new mono-repo-workspace --create-application=false
+
+ng g application host-app --routing --style=scss
+
+ng add @angular-architects/module-federation --project host-app --port 4200 host
+
+ ng add @angular-architects/module-federation --project mfe-app --port 4300 --type remote
+
+ ng g m todo-list --project mfe-app
